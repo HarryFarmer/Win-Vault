@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d2532ed4-bc95-4366-8216-c65e40f899e8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hf_name" select="1" icon="1" preview="1">
+        <row name="result" id="hf_engagementid">
+          <cell name="hf_readableengagementid" width="129" />
+          <cell name="hf_name" width="300" />
+          <cell name="hf_client" width="100" />
+          <cell name="hf_startdate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="hf_engagement">
+          <attribute name="hf_engagementid" />
+          <attribute name="hf_name" />
+          <attribute name="hf_readableengagementid" />
+          <attribute name="hf_client" />
+          <attribute name="hf_startdate" />
+          <order attribute="hf_startdate" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Engagements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

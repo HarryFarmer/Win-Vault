@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{707febe7-4c72-f111-ab0e-0022483ef37a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hf_skillname" select="1" icon="1" preview="1">
+        <row name="result" id="hf_skillareaid">
+          <cell name="hf_skillname" width="300" />
+          <cell name="hf_skillcategory" width="122" />
+          <cell name="hf_currentskilllevel" width="149" />
+          <cell name="hf_targetskilllevel" width="141" />
+          <cell name="hf_priority" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="hf_skillarea">
+          <attribute name="hf_skillareaid" />
+          <attribute name="hf_skillname" />
+          <attribute name="hf_skillcategory" />
+          <attribute name="hf_targetskilllevel" />
+          <attribute name="hf_currentskilllevel" />
+          <attribute name="hf_priority" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="hf_currentskilllevel" descending="false" />
+          <order attribute="hf_targetskilllevel" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Skills by Gap" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

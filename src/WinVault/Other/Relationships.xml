@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_hf_engagement" />
+  <EntityRelationship Name="business_unit_hf_skillarea" />
+  <EntityRelationship Name="business_unit_hf_skillgrowthlog" />
+  <EntityRelationship Name="business_unit_hf_weeklywinsnapshot" />
+  <EntityRelationship Name="business_unit_hf_win" />
+  <EntityRelationship Name="hf_skillgrowthlog_SkillArea_hf_skillarea" />
+  <EntityRelationship Name="hf_win_Engagement_hf_engagement" />
+  <EntityRelationship Name="hf_Win_hf_SkillArea_hf_SkillArea" />
+  <EntityRelationship Name="lk_hf_engagement_createdby" />
+  <EntityRelationship Name="lk_hf_engagement_modifiedby" />
+  <EntityRelationship Name="lk_hf_skillarea_createdby" />
+  <EntityRelationship Name="lk_hf_skillarea_modifiedby" />
+  <EntityRelationship Name="lk_hf_skillgrowthlog_createdby" />
+  <EntityRelationship Name="lk_hf_skillgrowthlog_modifiedby" />
+  <EntityRelationship Name="lk_hf_weeklywinsnapshot_createdby" />
+  <EntityRelationship Name="lk_hf_weeklywinsnapshot_modifiedby" />
+  <EntityRelationship Name="lk_hf_win_createdby" />
+  <EntityRelationship Name="lk_hf_win_modifiedby" />
+  <EntityRelationship Name="owner_hf_engagement" />
+  <EntityRelationship Name="owner_hf_skillarea" />
+  <EntityRelationship Name="owner_hf_skillgrowthlog" />
+  <EntityRelationship Name="owner_hf_weeklywinsnapshot" />
+  <EntityRelationship Name="owner_hf_win" />
+  <EntityRelationship Name="team_hf_engagement" />
+  <EntityRelationship Name="team_hf_skillarea" />
+  <EntityRelationship Name="team_hf_skillgrowthlog" />
+  <EntityRelationship Name="team_hf_weeklywinsnapshot" />
+  <EntityRelationship Name="team_hf_win" />
+  <EntityRelationship Name="user_hf_engagement" />
+  <EntityRelationship Name="user_hf_skillarea" />
+  <EntityRelationship Name="user_hf_skillgrowthlog" />
+  <EntityRelationship Name="user_hf_weeklywinsnapshot" />
+  <EntityRelationship Name="user_hf_win" />
+</EntityRelationships>

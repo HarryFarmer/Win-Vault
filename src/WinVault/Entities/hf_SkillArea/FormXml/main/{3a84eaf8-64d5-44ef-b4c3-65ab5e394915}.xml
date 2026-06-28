@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3a84eaf8-64d5-44ef-b4c3-65ab5e394915}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{2d826b8c-af26-4fd3-a0cd-0329ad5d36e1}" IsUserDefined="1" name="general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{333cc68a-836c-46e7-a9f8-d501e72df6f5}">
+                  <labels>
+                    <label description="Skill" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bd999750-20cb-45c8-ace4-b5071400973e}">
+                        <labels>
+                          <label description="Skill" languagecode="1033" />
+                        </labels>
+                        <control id="hf_skillname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hf_skillname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c2b7148b-55b0-482c-93cb-1849cfdb0ae8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Category" languagecode="1033" />
+                        </labels>
+                        <control id="hf_skillcategory" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hf_skillcategory" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5afc7865-0a4f-4f33-8ccc-b6a968d44b54}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Priority" languagecode="1033" />
+                        </labels>
+                        <control id="hf_priority" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hf_priority" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="11afe69b-484f-4f5a-a6e7-f6d2457bc6b9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Capability" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{70914bb3-4f36-4278-8625-ab8048d63f44}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{f81a777b-3af7-402d-93fc-f0197e006b45}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d92933e0-9b2f-4f1d-a3e5-e92bd8c2f46e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a5d8dae1-9f05-4315-835b-43311c275d59}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Target Skill Level" languagecode="1033" />
+                        </labels>
+                        <control id="hf_targetskilllevel" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hf_targetskilllevel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{160b3c1b-f2b1-4343-8b1c-92be11cda98a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Current Skill Level" languagecode="1033" />
+                        </labels>
+                        <control id="hf_currentskilllevel" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hf_currentskilllevel" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="eb5bf871-3382-4997-a43f-afc0ec8e6dca" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{3e3866c5-4637-48a7-975a-a59946d3398f}" locklevel="0" colspan="1" rowspan="4">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control id="hf_notes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hf_notes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="d76a3ab5-1ed7-4701-8fc8-5ec3785da569" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Evidence &amp; History" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="null_section_5" id="1c527a80-1a71-4149-acf0-e8f8bb25944a" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Evidence" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{ccb64dfb-c514-4639-b4cb-f9af6d1e189f}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1782571064302" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>hf_Win_hf_SkillArea_hf_SkillArea</RelationshipName>
+                            <TargetEntityType>hf_win</TargetEntityType>
+                            <ViewId>{BA26E19B-C562-44E3-B497-6BEE37384A96}</ViewId>
+                            <ViewIds>{BA26E19B-C562-44E3-B497-6BEE37384A96}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_2_section_1" id="d45d81e1-a7e9-40ff-bb32-f48518f01d51" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="History" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{82406af6-3456-4d9a-9ae5-1eca991c4e8d}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1782571165934" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>hf_skillgrowthlog_SkillArea_hf_skillarea</RelationshipName>
+                            <TargetEntityType>hf_skillgrowthlog</TargetEntityType>
+                            <ViewId>{A4681E28-A5C4-4B3A-B88B-10A0E1999378}</ViewId>
+                            <ViewIds>{A4681E28-A5C4-4B3A-B88B-10A0E1999378}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{bf8b4bdc-fa0e-47de-8dd6-b072d7a88e50}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c508c969-f9c3-4590-8f88-a99670484d46}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d16745a2-05d1-44b5-a79c-d8c08cf4deda}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eb6a221f-6550-4575-b345-1cb076948223}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{bd1e9148-87e5-49b5-9b78-03bf1f746cb3}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{4265df2b-b0f3-43e2-8267-8a59ed48d76c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{4c44cb24-27ad-4b19-894d-bc5fff943a6c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{17fc07d9-e43e-4348-9a24-26400ece638a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c7976cae-ff0d-4ad6-988f-217cdcc01b8c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

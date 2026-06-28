@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4d953d60-b0f5-4f91-85d2-92900212eef7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{812f8a89-a493-439a-a276-b43e340db393}" IsUserDefined="1" name="Win Tab">
+          <labels>
+            <label description="The Win" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ef3700a5-2d45-450b-8f67-0310aee1162f}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e537a6bd-2c1b-45d2-a6c4-cb9abcb63935}">
+                        <labels>
+                          <label description="Win Name" languagecode="1033" />
+                        </labels>
+                        <control id="hf_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hf_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb1bda41-3d94-454f-860d-dbafc6cf3171}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="hf_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="hf_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca5eb57f-be81-4c23-bb7e-4a04f7b5e07a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Engagement" languagecode="1033" />
+                        </labels>
+                        <control id="hf_engagement" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="hf_engagement" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Win Tab_section_3" id="a02ed706-f3b4-4f17-befb-34e8276da239" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="The Story" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{4985b1d5-c7aa-4c53-b96a-0a2c448a1e35}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Problem" languagecode="1033" />
+                        </labels>
+                        <control id="hf_problem" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hf_problem" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e6f2869-1123-4e3d-8376-0626413c10bb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approach" languagecode="1033" />
+                        </labels>
+                        <control id="hf_approach" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hf_approach" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ef4f98a-2bfa-43c9-a6ad-4b620181c725}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Outcome" languagecode="1033" />
+                        </labels>
+                        <control id="hf_outcome" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="hf_outcome" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Classification_tab" id="4ec5531e-873a-49c7-a488-c5ffac895cbd" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Classification" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="fb1c0e21-7320-4c23-a521-6c33b771a643" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Skills &amp; Markers" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{6138aba4-78f6-4bf7-836c-a35f5dfbf47f}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1782570149194" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>hf_Win_hf_SkillArea_hf_SkillArea</RelationshipName>
+                            <TargetEntityType>hf_skillarea</TargetEntityType>
+                            <ViewId>{74E813F3-8F76-4272-99C6-E133AFBFE586}</ViewId>
+                            <ViewIds>{74E813F3-8F76-4272-99C6-E133AFBFE586}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{80c7227a-1595-40e6-a7f1-19038cc67fc8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Usage Markers" languagecode="1033" />
+                        </labels>
+                        <control id="hf_tags" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="hf_tags" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Classification_tab_section_3" id="aeff3aab-bbd9-4247-bf40-b6e38b6ae5f0" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{c9c2894d-c771-491d-bd65-0f37d7645285}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Time Spent (Hours)" languagecode="1033" />
+                        </labels>
+                        <control id="hf_timespenthours" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="hf_timespenthours" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{11ef51e9-843a-4295-9492-9d00708c1552}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Impact" languagecode="1033" />
+                        </labels>
+                        <control id="hf_impact" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="hf_impact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0115e43-b875-49b6-bdc0-bed63c654097}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Evidence URL" languagecode="1033" />
+                        </labels>
+                        <control id="hf_evidenceurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="hf_evidenceurl" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7256cba-0b6d-4b29-9056-3015f11f19d0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Showcase Ready" languagecode="1033" />
+                        </labels>
+                        <control id="hf_cvready" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="hf_cvready" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8222db23-c465-47e3-a403-54ff256d69b6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{4826180b-ec69-4ad0-be41-2932791c3725}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ba584fb1-fba3-462d-a63f-cb4dc5c12e3f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{39d62cff-9706-4819-91a0-8ee08878fc36}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d6ad7437-5e07-4fd0-825f-488d4e14e1cf}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{6eb26cab-d9c1-4e55-ba03-720c9a815e2b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1cf8c202-cd16-4756-9f5d-5999925fac28}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{183139fc-ef0f-441b-9b0f-0d1915654553}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{38df3a3d-1cd6-4ac9-aa20-91a5b8619891}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

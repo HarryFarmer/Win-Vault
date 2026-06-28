@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{949d6295-fd89-4cce-a5da-5a8504401ab4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="hf_skillname" select="1" icon="1" preview="1">
+        <row name="result" id="hf_skillareaid">
+          <cell name="hf_skillname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="hf_skillarea">
+          <attribute name="hf_skillareaid" />
+          <attribute name="hf_skillname" />
+          <attribute name="createdon" />
+          <order attribute="hf_skillname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Skill Area Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
