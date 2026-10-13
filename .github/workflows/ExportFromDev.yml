@@ -1,0 +1,93 @@
+# .github/workflows/export-from-dev.yml
+# Exports the WinVault solution from DEV, unpacks it to readable XML,
+# and opens a pull request so every change is reviewable in Git.
+
+name: 1 - Export solution from Dev
+
+on:
+  workflow_dispatch:            # run manually from the Actions tab
+    inputs:
+      commit_message:
+        description: "What changed?"
+        required: true
+
+permissions:
+  contents: write               # push a branch
+  pull-requests: write          # open the PR
+
+env:
+  SOLUTION_NAME: ${{ vars.SOLUTION_NAME }}     # the solution's unique NAME, not display name
+  SOLUTION_FOLDER: src/${{ vars.SOLUTION_NAME }}
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Must come first - installs the Power Platform CLI on the runner
+      - name: Install Power Platform tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
+      # Smoke test: fails fast if the service principal can't reach DEV
+      - name: Who am I (Dev)
+        uses: microsoft/powerplatform-actions/who-am-i@v1
+        with:
+          environment-url: ${{ vars.DEV_URL }}
+          app-id: ${{ vars.PP_APP_ID }}
+          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          tenant-id: ${{ vars.PP_TENANT_ID }}
+
+      # Export BOTH flavours. Unmanaged = editable source of truth.
+      # Managed = needed so the unpacked source can later be packed as managed.
+      - name: Export unmanaged
+        uses: microsoft/powerplatform-actions/export-solution@v1
+        with:
+          environment-url: ${{ vars.DEV_URL }}
+          app-id: ${{ vars.PP_APP_ID }}
+          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          tenant-id: ${{ vars.PP_TENANT_ID }}
+          solution-name: ${{ env.SOLUTION_NAME }}
+          solution-output-file: out/${{ env.SOLUTION_NAME }}.zip
+          managed: false
+
+      - name: Export managed
+        uses: microsoft/powerplatform-actions/export-solution@v1
+        with:
+          environment-url: ${{ vars.DEV_URL }}
+          app-id: ${{ vars.PP_APP_ID }}
+          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          tenant-id: ${{ vars.PP_TENANT_ID }}
+          solution-name: ${{ env.SOLUTION_NAME }}
+          solution-output-file: out/${{ env.SOLUTION_NAME }}_managed.zip
+          managed: true
+
+      # Turn the zip into individual XML files so Git can diff them.
+      # 'Both' expects the two zips side by side (Name.zip + Name_managed.zip).
+      - name: Unpack solution
+        uses: microsoft/powerplatform-actions/unpack-solution@v1
+        with:
+          solution-file: out/${{ env.SOLUTION_NAME }}.zip
+          solution-folder: ${{ env.SOLUTION_FOLDER }}
+          solution-type: Both
+          overwrite-files: true
+
+      # Plain git rather than a helper action, so you can see exactly what happens
+      - name: Commit to a branch and open a PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH="export/${{ github.run_number }}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add "${{ env.SOLUTION_FOLDER }}"
+          if git diff --cached --quiet; then
+            echo "No changes since last export - nothing to commit."
+            exit 0
+          fi
+          git commit -m "${{ github.event.inputs.commit_message }}"
+          git push origin "$BRANCH"
+          gh pr create --title "${{ github.event.inputs.commit_message }}" \
+                       --body "Exported from Dev by run #${{ github.run_number }}" \
+                       --base main --head "$BRANCH"
