@@ -37,7 +37,7 @@ jobs:
         with:
           environment-url: ${{ vars.TEST_URL }}
           app-id: ${{ vars.PP_APP_ID }}
-          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          client-secret: ${{ secrets.POWERPLATFORMSPN }}
           tenant-id: ${{ vars.PP_TENANT_ID }}
 
       - name: Import into Test
@@ -45,7 +45,7 @@ jobs:
         with:
           environment-url: ${{ vars.TEST_URL }}
           app-id: ${{ vars.PP_APP_ID }}
-          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          client-secret: ${{ secrets.POWERPLATFORMSPN }}
           tenant-id: ${{ vars.PP_TENANT_ID }}
           solution-file: out/${{ env.SOLUTION_NAME }}_managed.zip
           force-overwrite: true
