@@ -35,7 +35,7 @@ jobs:
         with:
           environment-url: ${{ vars.DEV_URL }}
           app-id: ${{ vars.PP_APP_ID }}
-          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          client-secret: ${{ secrets.POWERPLATFORMSPN }}
           tenant-id: ${{ vars.PP_TENANT_ID }}
 
       # Export BOTH flavours. Unmanaged = editable source of truth.
@@ -45,7 +45,7 @@ jobs:
         with:
           environment-url: ${{ vars.DEV_URL }}
           app-id: ${{ vars.PP_APP_ID }}
-          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          client-secret: ${{ secrets.POWERPLATFORMSPN }}
           tenant-id: ${{ vars.PP_TENANT_ID }}
           solution-name: ${{ env.SOLUTION_NAME }}
           solution-output-file: out/${{ env.SOLUTION_NAME }}.zip
@@ -56,7 +56,7 @@ jobs:
         with:
           environment-url: ${{ vars.DEV_URL }}
           app-id: ${{ vars.PP_APP_ID }}
-          client-secret: ${{ secrets.PP_CLIENT_SECRET }}
+          client-secret: ${{ secrets.POWERPLATFORMSPN }}
           tenant-id: ${{ vars.PP_TENANT_ID }}
           solution-name: ${{ env.SOLUTION_NAME }}
           solution-output-file: out/${{ env.SOLUTION_NAME }}_managed.zip
